@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+    .grand2-button {
+        margin-bottom: 20px;
+        margin-top: -30px;
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        line-height: 45px;
+        text-align: center;
+        background-color: #2a4a7d; /* 深蓝色背景 */
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        border: 2px solid #f9f9f9; /* 深蓝色边框 */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none; /* 去掉链接下划线 */
+    }
+
+    .grand2-button:hover {
+        color: #fff;
+        background-color: #1a365d; /* 悬停时颜色变深 */
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* 阴影加深 */
+        transform: translateY(-2px); /* 轻微上浮 */
+    }
+
+    .grand2-button:active {
+        transform: translateY(1px); /* 点击时下沉效果 */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* 阴影减弱 */
+    }
+
+    /* 为按钮添加内边距，使文字居中 */
+    .grand2-button span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    /* ... 你原有的CSS ... */
+
+    /* 大气按钮样式 */
+    .grand-button {
+        margin-top: 100px;
+        display: inline-block;
+        width: 220px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background-color: #1a365d; /* 深蓝色背景 */
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        border: 2px solid #2a4a7d; /* 深蓝色边框 */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none; /* 去掉链接下划线 */
+    }
+
+    .grand-button:hover {
+        color: #fff;
+        background-color: #2a4a7d; /* 悬停时颜色变深 */
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* 阴影加深 */
+        transform: translateY(-2px); /* 轻微上浮 */
+    }
+
+    .grand-button:active {
+        transform: translateY(1px); /* 点击时下沉效果 */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* 阴影减弱 */
+    }
+
+    /* 为按钮添加内边距，使文字居中 */
+    .grand-button span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/video.css">
+    <link rel="stylesheet" href="./css/booking.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/opening-hours.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+<!-- 头部区域 -->
+<div class="header-wrapper">
+    <div class="brand-logo-section">
+        <img src="./img/logo.avif" alt="网站Logo">
+    </div>
+</div>
+
+<!-- 导航栏 -->
+<nav class="primary-navigation">
+    <div class="nav-menu-container">
+        <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="shoulou.html">售樓說明書</a></li>
+            <li><a href="jiadan.html">價單</a></li>
+            <li><a href="https://wa.me/85264492395?text=我想預約參觀黃金海灣">預約參觀</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 背景区域 -->
+<div class="hero-banner-section">
+    <img src="./img/logo.avif" alt="网站Logo" class="hero-logo">
+    <a href="https://wa.me/85264492395?text=我想預約參觀黃金海灣" class="grand-button" target="_blank">
+        <span>預約參觀單位</span>
+    </a>
+</div>
+
+<!-- 视频宣传模块 -->
+<section class="video-promo-section">
+    <h2 class="section-heading-title" >宣傳影片</h2>
+    <div class="video-container">
+        <video class="promo-video" controls autoplay muted>
+            <source src="./vd/tt.mp4" type="video/mp4">
+            您的浏览器不支持HTML5视频播放，请升级您的浏览器。
+        </video>
+        <p class="video-description">瞭解我們的品牌故事，感受項目的獨特魅力</p>
+    </div>
+</section>
+</a>
+<!-- 预约参观模块 -->
+<section class="booking-visit-section">
+    <h2 class="section-heading-title">預約參觀</h2>
+    <div class="booking-content-wrapper">
+        <div class="booking-image-container">
+            <img src="./img/57ce1a_9ccc47a272fc4c5cb9b37eac42136821~mv2.jpg" alt="室内装修效果图" class="booking-interior-image">
+        </div>
+        <div class="booking-info-container">
+            <div>
+                <h3 class="booking-title">預約參觀我們的展示單位</h3>
+                <p class="booking-description">
+                    探索我們精心設計的展示單位，體驗高品質的居住環境。立即預約，親臨感受現代生活方式的完美融合。
+                </p>
+                <a href="https://wa.me/85264492395?text=我想預約參觀黃金海灣" class="grand2-button" target="_blank">
+                    <span>立即預約</span>
+                </a>
+            </div>
+            <div class="property-details">
+                <h4 class="property-details-title">樓盤資料</h4>
+                <ul class="property-details-list">
+                    <li class="property-details-item">
+                        <span class="property-label">項目名稱</span>
+                        <span class="property-value">天玺•天</span>
+                    </li>
+                    <li class="property-details-item">
+                        <span class="property-label">發展商</span>
+                        <span class="property-value">新鴻基地產</span>
+                    </li>
+                    <li class="property-details-item">
+                        <span class="property-label">位置</span>
+                        <span class="property-value">九龍啟德協調道10號</span>
+                    </li>
+                    <li class="property-details-item">
+                        <span class="property-label">面積範圍</span>
+                        <span class="property-value">約236至3936平方呎</span>
+                    </li>
+                    <li class="property-details-item">
+                        <span class="property-label">戶型</span>
+                        <span class="property-value">開放式至四房特色單位</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="content-section-module">
+    <h2 class="section-heading-title">相片集</h2>
+
+    <div class="photo-gallery-grid">
+        <div class="gallery-item">
+            <img src="./img/0826_KT_AGENT_POSTER_MLP_T3_with_area.avif" loading="lazy" alt="" onclick="openDialog(this.src, this.alt)">
+        </div>
+        <div class="gallery-item">
+            <img src="./img/0826_KT_AGENT_POSTER_MLP_T56_AREA.avif" loading="lazy" alt="" onclick="openDialog(this.src, this.alt)">
+        </div>
+        <div class="gallery-item">
+            <img src="./img/0826_KT_AGENT_POSTER_MLP_EZ_with_area.avif" loading="lazy" alt="" onclick="openDialog(this.src, this.alt)">
+        </div>
+        <div class="gallery-item">
+            <img src="./img/57ce1a_9ccc47a272fc4c5cb9b37eac42136821~mv2.avif" loading="lazy" alt="" onclick="openDialog(this.src, this.alt)">
+        </div>
+        <div class="gallery-item">
+            <img src="./img/189782_181231.webp"  loading="lazy" alt="" onclick="openDialog(this.src, this.alt)">
+        </div>
+        <div class="gallery-item">
+            <img src="./img/783470_210017.webp" loading="lazy"  alt="" onclick="openDialog(this.src, this.alt)">
+        </div>
+    </div>
+    <dialog id="imageDialog">
+        <img id="dialogImage" src="" alt="">
+        <p id="dialogCaption"></p>
+        <button id="closeDialog">X</button>
+    </dialog>
+</section>
+
+<!-- 参观登记模块 -->
+<section class="content-section-module">
+    <h2 class="section-heading-title">現已接受預約參觀登記</h2>
+    <p class="section-heading-p">立即
+        <a href="https://wa.me/85264492395?text=我想預約參觀黃金海灣" target="_blank" rel="noopener noreferrer">預約</a>
+        参观示范单位
+    </p>
+    <div class="content-area-wrapper">
+        <div class="advantages-carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-slides">
+                    <div class="slide active">
+                        <img src="./img/微信图片_20250810152203.jpg" alt="地理位置优越">
+                        <div class="slide-content">
+                            <h3>地理位置優越</h3>
+                            <p>黃金地段，樞紐之心。</p>
+                            <p>出門即享受城市脈動，繁華觸手可及</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./img/743977_268216.webp" alt="品质建筑设计">
+                        <div class="slide-content">
+                            <h3>品質建築設計</h3>
+                            <p>立面挺拔，鑄就城市新地標</p>
+                            <p>現代化建築風格，精裝修標準，品質生活保障</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./img/189782_181231.webp" alt="完善配套设施">
+                        <div class="slide-content">
+                            <h3>營造綠意家園</h3>
+                            <p>推窗見綠，滿目清新</p>
+                            <p>讓家在公園裡，讓健康在綠意中</p>
+
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="./img/783470_210017.webp" alt="">
+                        <div class="slide-content">
+                            <h3>全景無邊際泳池</h3>
+                            <p>長達約25米的廣闊水弧型設計，滿溢水盈動感</p>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+                </div>
+
+                <!-- 导航按钮 -->
+                <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">‹</button>
+                <button class="carousel-btn next-btn" onclick="changeSlide(1)">›</button>
+            </div>
+
+            <!-- 指示器 -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+                <span class="indicator" onclick="currentSlide(4)"></span>
+                <span class="indicator" onclick="currentSlide(5)"></span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- 位置信息模块 -->
+<section class="content-section-module">
+    <div class="content-area-wrapper">
+        <h1 class="section-heading-title">位置信息</h1>
+        <div class="floor-plan-section">
+            <div class="map-container">
+                <img src="./img/微信图片_20250812162041.jpg" alt="天玺·天位置地图" class="map-image">
+            </div>
+            <div class="map-description">
+                <h3 class="map-title">天璽·天位置</h3>
+                <p class="map-info">
+                    <strong>區域：</strong>啟德<br>
+                    <strong>地址：</strong>啟德·協調道10號<br>
+                    位於啟德核心地段，鄰近啟德體育園及啟德郵輪碼頭，周邊配套完善，交通便利。項目周邊包括啟德跑道公園、AIRSIDE商場、香港兒童醫院等標誌性建築，生活氛圍濃厚。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 预约参观模块 -->
+<section class="content-section-module">
+    <h2 class="section-heading-title">預約參觀</h2>
+    <div class="booking-form-wrapper">
+        <div class="booking-form-header">
+            <p>如欲查詢更多可於下表格填寫聯絡資料 或 <a href="https://wa.me/85264492395?text=我想預約參觀黃金海灣" target="_blank">接洽</a> (以WhatsApp並進行對話)</p>
+        </div>
+
+        <div class="booking-form-container">
+            <div class="form-image-section">
+                <img src="./img/231671_177191.webp" alt="项目外观" class="booking-bg-image">
+
+            </div>
+
+            <div class="form-section">
+                <h4 class="form-title">預約參觀表格</h4>
+                <form id="bookingForm" action="/api/booking" method="POST" class="booking-form">
+                    <div class="form-group">
+                        <label for="customerName">名稱</label>
+                        <input type="text" id="customerName" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone">電話</label>
+                        <input type="tel" id="customerPhone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerMessage">留言</label>
+                        <textarea id="customerMessage" name="message" rows="4" placeholder="请输入您的留言"></textarea>
+                    </div>
+                    <a href="https://wa.me/85264492395?text=我想預約參觀黃金海灣" class="form-submit-btn" target="_blank">
+                        <span>立即預約</span>
+                    </a>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- 表单提交状态提示 -->
+        <div id="formMessage" class="form-message" style="display: none;"></div>
+    </div>
+</section>
+
+<!-- 开放时间模块 -->
+<section class="content-section-module">
+    <div class="content-area-wrapper">
+        <div class="opening-hours-display">
+            <!-- LOGO区域 -->
+            <div class="logo-section">
+                <img src="./img/logo.avif" alt="项目LOGO" class="opening-hours-logo">
+            </div>
+
+            <!-- 开放时间标题 -->
+            <div class="opening-hours-header">
+                <h3 class="opening-hours-main-title">示範單位 開放時間</h3>
+            </div>
+
+            <!-- 开放时间表格 -->
+            <div class="opening-hours-schedule">
+                <div class="schedule-row">
+                    <span class="day-text">星期一至星期五</span>
+                    <span class="time-text">11:00 AM - 8:00 PM</span>
+                </div>
+                <div class="schedule-row">
+                    <span class="day-text">星期六</span>
+                    <span class="time-text">11:00 AM - 8:00 PM</span>
+                </div>
+                <div class="schedule-row">
+                    <span class="day-text">星期日</span>
+                    <span class="time-text">11:00 AM - 8:00 PM</span>
+                </div>
+            </div>
+
+            <!-- 项目名称 -->
+            <div class="project-identity">
+                <h4 class="project-chinese-name">天璽·天</h4>
+                <p class="project-english-name">CULLINAN.SKY</p>
+            </div>
+
+            <!-- 免责声明 -->
+            <div class="legal-disclaimer">
+                <p class="disclaimer-content">
+                    本廣告/宣傳資料內容包含之相片、圖像、繪圖或素材僅供參考，並不反映實際景觀，對於實際景觀不作任何保證或承諾。賣方亦建議準買家到有關發展地盤作實地考察，以對該發展項目、其周邊地區環境及附近的公共設施有較佳了解。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.title = "mydearnoze";
+</script>
+</body>
+<script src="./js/script.js">
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+        img.addEventListener('click', () => {
+            window.open(img.src, '_blank');
+        });
+    });
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,47 @@
+/* 户型展示模块样式 */
+.floor-plan-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.map-container {
+    width: 60%;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.map-description {
+    width: 40%;
+    padding: 1rem;
+}
+
+.map-title {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 0.5rem;
+}
+
+.map-info {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.map-info strong {
+    color: #333;
+}

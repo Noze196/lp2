@@ -1,0 +1,72 @@
+/* 开放时间模块 */
+
+
+.opening-hours-logo {
+    /* 根据需要添加logo样式 */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.opening-hours-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.opening-hours-main-title {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.opening-hours-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.schedule-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e1e5e9;
+}
+
+.day-text {
+    font-weight: 600;
+    color: #555;
+}
+
+.time-text {
+    color: #0066cc;
+    font-weight: 500;
+}
+
+.project-identity {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.project-chinese-name {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.project-english-name {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.legal-disclaimer {
+    text-align: center;
+}
+
+.disclaimer-content {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}

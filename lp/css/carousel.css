@@ -1,0 +1,110 @@
+/* 轮播图容器 */
+.advantages-carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem;
+    min-height: 400px;
+}
+
+.slide img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slide-content {
+    width: 50%;
+    padding: 0 2rem;
+    color: #333;
+}
+
+.slide-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.slide-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* 导航按钮 */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 102, 204, 0.8);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 102, 204, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+/* 指示器 */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: #0066cc;
+}
+
+.indicator:hover {
+    background-color: #1E90FF;
+}

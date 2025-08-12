@@ -1,0 +1,150 @@
+/* 内容模块样式 */
+/* 模态框背景 */
+/* Dialog 基本样式 */
+
+
+#imageDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    min-width: 90%;
+    min-height: 90%;
+    background: white;
+}
+
+
+#imageDialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#dialogImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+#dialogCaption {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#closeDialog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+#closeDialog:hover {
+    background: #f0f0f0;
+}
+
+
+.photo-gallery-grid {
+    background-color: rgba(255, 255, 255, 0.4); /* 白色背景，70% 透明度 */
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 300px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.content-section-module {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.section-heading-title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    color: bisque;
+}
+
+.content-area-wrapper {
+    background-color: rgba(255, 255, 255, 0.4); /* 白色背景，70% 透明度 */
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 300px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 项目优势模块中的p标签样式 */
+.section-heading-p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin: 1rem auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.content-placeholder-area {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+}

@@ -1,0 +1,42 @@
+/* 基础重置和通用样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/231671_177191.webp'); /* 替换为你的图片路径 */
+    background-size: cover; /* 确保图片覆盖整个背景 */
+    background-position: center; /* 图片居中显示 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+    background-attachment: fixed; /* 固定背景，不随滚动移动 */
+
+    /* 添加模糊效果 */
+    position: relative; /* 为伪元素定位做准备 */
+}
+
+/* 使用伪元素添加模糊效果，避免模糊整个页面内容 */
+body::before {
+    content: "";
+    position: fixed; /* 固定定位 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* 继承body的背景图片 */
+    background-size: inherit;
+    background-position: inherit;
+    background-repeat: inherit;
+    filter: blur(5px); /* 调整模糊程度，可以根据需要修改值 */
+    z-index: -1; /* 确保背景在内容下方 */
+}
