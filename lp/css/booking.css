@@ -6,27 +6,69 @@
     padding: 3rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.4); /* 白色背景，70% 透明度 */
+    background-color: rgba(255, 255, 255, 0.4) !important; /* 白色背景，70% 透明度 */
     border-radius: 15px;
-
+    position: relative;
+    z-index: 1;
 }
 
 .booking-content-wrapper {
     display: flex;
-    flex-direction: column; /* 改为垂直排列 */
-    gap: 3rem;
-    align-items: stretch; /* 子元素宽度会拉伸填满容器 */
+    flex-direction: column;
+    gap: 1.5rem; /* 减小间距 */
+    align-items: stretch;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-
 .booking-image-container {
-    flex: 1;
-    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 250px; /* 固定高度 */
+    overflow: hidden;
 }
+
+.booking-interior-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 30% center; /* 水平偏左30%，垂直居中 */
+    display: block;
+}
+
+
+
+
+
+/* 其他样式保持不变 */
+
+
+@media (max-width: 768px) {
+    .booking-content-wrapper {
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .booking-image-container {
+        padding: 0;
+        margin: 0;
+    }
+    .booking-interior-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
 
 .booking-interior-image {
     width: 100%;
