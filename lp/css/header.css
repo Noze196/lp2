@@ -25,7 +25,58 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    padding: 1rem;
+    background-color: #333; /* 添加背景色以便在移动端更清晰 */
 }
+
+/* 电脑端样式 */
+@media (min-width: 768px) {
+    .primary-navigation {
+        /* 电脑端特定样式 */
+        padding: 0rem 2rem;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+}
+
+/* 手机端样式 */
+@media (max-width: 767px) {
+    .primary-navigation {
+        flex-wrap: wrap;
+        padding: 0.75rem;
+    }
+
+    .nav-links {
+        display: none; /* 默认隐藏导航链接 */
+        width: 100%;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex; /* 当添加active类时显示导航链接 */
+    }
+
+    .menu-toggle {
+        display: block; /* 在手机端显示菜单按钮 */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+/* 电脑端隐藏菜单按钮 */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
 
 .nav-menu-container ul {
     display: flex;
